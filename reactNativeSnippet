@@ -1,0 +1,26 @@
+{
+  "typescript_react_native_function_component": {
+    "prefix": "rnfc",
+    "body": [
+      "import React, { FunctionComponent } from 'react';",
+      "import { View, Text, StyleProp, ViewStyle, Animated } from 'react-native';",
+      "",
+      "interface Props {",
+      "  style?: StyleProp<ViewStyle>;",
+      "}",
+      "",
+      "const ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}}: FunctionComponent<Props> = function ${1:first}() {",
+      "  return (",
+      "    <View>",
+      "      <Text>{'${1:first}'}</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:first};",
+      "$0"
+    ],
+    "description": "Creates a React Native Function Component with ES7 module system, Typescript interface",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  }
+}
