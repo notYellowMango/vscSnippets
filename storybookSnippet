@@ -1,0 +1,28 @@
+{
+  "typescript_react_native_function_component": {
+    "prefix": "rs",
+    "body": [
+      "import React from 'react';",
+      "import { ComponentStory, ComponentMeta } from '@storybook/react'",
+      "import { within, userEvent } from '@storybook/testing-library'",
+      "import  ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} from '.';",
+      "",
+      "export default {",
+      " title: '${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}}',",
+      " component: ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}},",
+      " parameters: {",
+      " layout: 'fullscreen',",
+      " },",
+      "  } as ComponentMeta<typeof ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}}>;",
+      "",
+      "const ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}}StoryTemplate: ComponentStory<typeof ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}}> = (args) => (",
+      " <${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}} {...args} />",
+      ")",
+      "",
+      "export const Primary = ${1:${TM_DIRECTORY/^.+\\/(.*)$/$1/}}StoryTemplate.bind({});",
+      "$0"
+    ],
+    "description": "Creat Storybook tsx File",
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  }
+}
